@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="miniRouter.js"></script>
+    <script>
+        var a=new miniRouter();
+        a.add({
+            route:"/test",
+            action:function () {
+                console.log('test')
+            }
+        }).add({
+            route:"/test1",
+            action:function () {
+                console.log('test1')
+            }
+        });
+        a.start();
+    </script>
+</head>
+<body>
+
+</body>
+<script>
+
+</script>
+</html>
